@@ -40,11 +40,6 @@ const Navbar = () => {
           </nav>
 
           {/* Icons */}
-          <div className="flex gap-2">
-            <FaSearch className="text-xl cursor-pointer text-white hover:text-yellow-400" />
-            <FaShoppingBag className="text-xl cursor-pointer text-white hover:text-yellow-400" />
-            <FaUserAlt className="text-xl cursor-pointer text-white hover:text-yellow-400" />
-          </div>
         </div>
       </header>
 
@@ -137,15 +132,15 @@ const Navbar = () => {
             <div className="w-full sm:w-1/4">
               <h3 className="text-2xl font-semibold mb-4">Contact Us</h3>
               <div className="flex items-center gap-2 mb-4">
-                <FaPhoneAlt className="text-yellow-400 text-xl" />
+            
                 <p className="text-sm">+1 234 567 890</p>
               </div>
               <div className="flex items-center gap-2 mb-4">
-                <FaEnvelope className="text-yellow-400 text-xl" />
+                
                 <p className="text-sm">info@foodtuck.com</p>
               </div>
               <div className="flex items-center gap-2">
-                <FaMapMarkerAlt className="text-yellow-400 text-xl" />
+                
                 <p className="text-sm">123 Food Street, City, Country</p>
               </div>
             </div>

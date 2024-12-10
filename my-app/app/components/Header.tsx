@@ -33,11 +33,7 @@ const Navbar = () => {
         </div>
 
         {/* Icons for Search, User, and Cart */}
-        <div className="flex gap-2">
-          <FaSearch className="text-sm cursor-pointer text-gray-700 hover:text-green-600" />
-          <FaShoppingBag className="text-sm cursor-pointer text-gray-700 hover:text-green-600" />
-          <FaUserAlt className="text-sm cursor-pointer text-gray-700 hover:text-green-600" />
-        </div>
+        
       </div>
     </header>
   );

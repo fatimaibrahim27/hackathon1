@@ -1,7 +1,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { FaGoogle, FaApple } from "react-icons/fa"; // Icon imports for social sign-up
+
 
 export default function SignUpPage() {
   return (
@@ -73,11 +73,11 @@ export default function SignUpPage() {
           <div className="text-center mt-6">
             <p className="text-gray-500 mb-2">or</p>
             <button className="w-full bg-gray-100 border text-black py-2 rounded flex items-center justify-center mt-2">
-              <FaGoogle className="mr-2" />
+              
               Sign up with Google
             </button>
             <button className="w-full bg-gray-100 border text-black py-2 rounded flex items-center justify-center mt-2">
-              <FaApple className="mr-2" />
+              
               Sign up with Apple
             </button>
           </div>

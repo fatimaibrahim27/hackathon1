@@ -1,8 +1,7 @@
 SignInPage 
 import Link from "next/link";
 import { IoChevronForwardOutline } from "react-icons/io5";
-import { FcGoogle } from "react-icons/fc";
-import { ImAppleinc } from "react-icons/im";
+
 
 export default function SignInPage() {
   return (
@@ -74,11 +73,11 @@ export default function SignInPage() {
           <div className="text-center mt-8">
             <p>or</p>
             <button className="w-full bg-gray-100 border text-black py-2 rounded mt-2 flex items-center justify-center">
-            <FcGoogle className="h-6 mr-2" />
+            
               Sign in with Google
             </button>
             <button className="w-full bg-gray-100 border text-black py-2 rounded mt-2 flex items-center justify-center">
-              <ImAppleinc className="h-6 mr-2" />
+              
               Sign in with Apple
             </button>
           </div>

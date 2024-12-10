@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaSearch, FaUserAlt, FaShoppingBag } from "react-icons/fa"; // Import icons
+
 
 const Navbar = () => {
   return (
@@ -41,11 +41,8 @@ const Navbar = () => {
           </nav>
 
           {/* Icons for Search, User, and Cart */}
-          <div className="flex gap-2">
-            <FaSearch className="text-xl cursor-pointer text-white hover:text-yellow-400" />
-            <FaShoppingBag className="text-xl cursor-pointer text-white hover:text-yellow-400" />
-            <FaUserAlt className="text-xl cursor-pointer text-white hover:text-yellow-400" />
-          </div>
+          
+        
         </div>
       </header>
 

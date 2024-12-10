@@ -29,15 +29,15 @@ const Footer = () => {
             <h3 className="font-semibold text-lg">Contact Us</h3>
             <div className="mt-2 text-xs sm:text-sm flex flex-col gap-2">
               <div className="flex items-center gap-2">
-                <FaEnvelope className="text-lg" />
+                
                 <span>contact@foodstocks.com</span>
               </div>
               <div className="flex items-center gap-2">
-                <FaPhoneAlt className="text-lg" />
+            
                 <span>+1 234 567 890</span>
               </div>
               <div className="flex items-center gap-2">
-                <FaMapMarkerAlt className="text-lg" />
+
                 <span>1234 Food Street, New York, USA</span>
               </div>
             </div>
