@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-
+import Image from "next/image";
 
 const Navbar = () => {
   return (
@@ -39,10 +39,6 @@ const Navbar = () => {
               Contact
             </Link>
           </nav>
-
-          {/* Icons for Search, User, and Cart */}
-          
-        
         </div>
       </header>
 
@@ -51,8 +47,6 @@ const Navbar = () => {
         className="bg-cover bg-center h-[90px] sm:h-[130px] p-[26px] flex flex-col justify-center items-center text-white relative"
         style={{
           backgroundImage: 'url("/unsplash_4ycv3Ky1ZZU.png")',
-          backgroundSize: "cover",
-          backgroundPosition: "center",
         }}
       >
         <h1 className="text-2xl sm:text-3xl font-extrabold">About us</h1>
@@ -64,7 +58,9 @@ const Navbar = () => {
             Home
           </Link>
           <span className="mx-2"> &gt; </span>
-          <span>Menu</span>
+          <Link href="/menu" className="hover:text-yellow-400 transition">
+            Menu
+          </Link>
         </div>
       </div>
 
@@ -73,24 +69,30 @@ const Navbar = () => {
         {/* Image Section */}
         <div className="flex flex-col items-center sm:w-1/2 gap-4">
           <div className="w-28 h-28 sm:w-32 sm:h-32">
-            <img
+            <Image
               src="/unsplash_lP5MCM6nZ5A.png"
               alt="Delicious Food Top"
+              width={112}
+              height={112}
               className="w-full h-full object-cover rounded-md"
             />
           </div>
           <div className="flex gap-4 w-full justify-center">
             <div className="w-24 h-24 sm:w-28 sm:h-28">
-              <img
+              <Image
                 src="/unsplash_CLMpC9UhyTo.png"
                 alt="Delicious Food Left"
+                width={96}
+                height={96}
                 className="w-full h-full object-cover rounded-md"
               />
             </div>
             <div className="w-24 h-24 sm:w-28 sm:h-28">
-              <img
+              <Image
                 src="/unsplash_ZuIDLSz3XLg.png"
                 alt="Delicious Food Right"
+                width={96}
+                height={96}
                 className="w-full h-full object-cover rounded-md"
               />
             </div>
@@ -140,12 +142,12 @@ const Navbar = () => {
           facilisi. Curabitur at odio vitae sapien tempus dignissim.</i>
         </p>
         <div className="mt-3">
-          <img
-            src="\unsplash_3iexvMShGfQ.png"
+          <Image
+            src="/unsplash_3iexvMShGfQ.png"
             alt="Why Choose Us"
+            width={300}
+            height={160}
             className="w-full max-w-md mx-auto rounded-md"
-            width={150}
-            height={80}
           />
         </div>
       </div>
@@ -154,155 +156,76 @@ const Navbar = () => {
       <div className="bg-gray-50 py-2">
         <div className="container mx-auto flex flex-wrap justify-center gap-2">
           <div className="w-20 h-20 sm:w-24 sm:h-24">
-            <img
+            <Image
               src="/Best chef.png"
               alt="Chef One"
+              width={80}
+              height={80}
               className="w-full h-full object-contain"
             />
           </div>
           <div className="w-20 h-20 sm:w-24 sm:h-24">
-            <img
-              src="\120 item.png"
+            <Image
+              src="/120-item.png"
               alt="Chef Two"
+              width={80}
+              height={80}
               className="w-full h-full object-contain"
             />
           </div>
           <div className="w-20 h-20 sm:w-24 sm:h-24">
-            <img
-              src="\120 item.png"
+            <Image
+              src="/120-item.png"
               alt="Chef Three"
+              width={80}
+              height={80}
               className="w-full h-full object-contain"
             />
           </div>
         </div>
         <h1 className="font-extrabold text-lg sm:text-xl text-gray-800 leading-tight mb-4">
-        Our Food Menu
-      </h1>
+          Our Food Menu
+        </h1>
 
-      <h6 className="text-[10px] sm:text-xs font-thin text-gray-800 mt-2 italic mb-6">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
-      </h6>
+        <h6 className="text-[10px] sm:text-xs font-thin text-gray-800 mt-2 italic mb-6">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+        </h6>
 
-      {/* Menu Categories (Breakfast, Lunch, Dinner) */}
-      <div className="flex justify-around w-full mb-6">
-        <button className="text-lg sm:text-xl font-semibold text-green-800 border-b-2 border-transparent hover:border-green-800 transition duration-300">
-          Breakfast
-        </button>
-        <button className="text-lg sm:text-xl font-semibold text-green-800 border-b-2 border-transparent hover:border-green-800 transition duration-300">
-          Lunch
-        </button>
-        <button className="text-lg sm:text-xl font-semibold text-green-800 border-b-2 border-transparent hover:border-green-800 transition duration-300">
-          Dinner
-        </button>
-      </div>
-
-      {/* Menu Items */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 mb-8">
-        {/* Breakfast Items */}
-        <div className="flex flex-col items-center text-xs sm:text-sm font-semibold text-gray-700 hover:text-green-600">
-          <button>Grilled Salmon</button>
-          <span className="text-sm text-green-800 mt-2">$32</span>
-        </div>
-        <div className="flex flex-col items-center text-xs sm:text-sm font-semibold text-gray-700 hover:text-green-600">
-          <button>BBQ Chicken Breast</button>
-          <span className="text-sm text-green-800 mt-2">$28</span>
-        </div>
-        <div className="flex flex-col items-center text-xs sm:text-sm font-semibold text-gray-700 hover:text-green-600">
-          <button>Fried Shrimp</button>
-          <span className="text-sm text-green-800 mt-2">$24</span>
-        </div>
-        <div className="flex flex-col items-center text-xs sm:text-sm font-semibold text-gray-700 hover:text-green-600">
-          <button>Vegetable Stir-fry</button>
-          <span className="text-sm text-green-800 mt-2">$18</span>
+        {/* Menu Categories (Breakfast, Lunch, Dinner) */}
+        <div className="flex justify-around w-full mb-6">
+          <button className="text-lg sm:text-xl font-semibold text-green-800 border-b-2 border-transparent hover:border-green-800 transition duration-300">
+            Breakfast
+          </button>
+          <button className="text-lg sm:text-xl font-semibold text-green-800 border-b-2 border-transparent hover:border-green-800 transition duration-300">
+            Lunch
+          </button>
+          <button className="text-lg sm:text-xl font-semibold text-green-800 border-b-2 border-transparent hover:border-green-800 transition duration-300">
+            Dinner
+          </button>
         </div>
 
-        {/* Lunch Items */}
-        <div className="flex flex-col items-center text-xs sm:text-sm font-semibold text-gray-700 hover:text-green-600">
-          <button>Steak</button>
-          <span className="text-sm text-green-800 mt-2">$45</span>
-        </div>
-        <div className="flex flex-col items-center text-xs sm:text-sm font-semibold text-gray-700 hover:text-green-600">
-          <button>Chicken Wings</button>
-          <span className="text-sm text-green-800 mt-2">$22</span>
-        </div>
-        <div className="flex flex-col items-center text-xs sm:text-sm font-semibold text-gray-700 hover:text-green-600">
-          <button>Caesar Salad</button>
-          <span className="text-sm text-green-800 mt-2">$15</span>
-        </div>
-        <div className="flex flex-col items-center text-xs sm:text-sm font-semibold text-gray-700 hover:text-green-600">
-          <button>Grilled Chicken</button>
-          <span className="text-sm text-green-800 mt-2">$30</span>
-        </div>
-
-        {/* Dinner Items */}
-        <div className="flex flex-col items-center text-xs sm:text-sm font-semibold text-gray-700 hover:text-green-600">
-          <button>Roasted Lamb</button>
-          <span className="text-sm text-green-800 mt-2">$50</span>
-        </div>
-        <div className="flex flex-col items-center text-xs sm:text-sm font-semibold text-gray-700 hover:text-green-600">
-          <button>Beef Stew</button>
-          <span className="text-sm text-green-800 mt-2">$38</span>
-        </div>
-        <div className="flex flex-col items-center text-xs sm:text-sm font-semibold text-gray-700 hover:text-green-600">
-          <button>Salmon Fillet</button>
-          <span className="text-sm text-green-800 mt-2">$42</span>
-        </div>
-        <div className="flex flex-col items-center text-xs sm:text-sm font-semibold text-gray-700 hover:text-green-600">
-          <button>Pasta Primavera</button>
-          <span className="text-sm text-green-800 mt-2">$36</span>
+        {/* Menu Items */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 mb-8">
+          {/* Breakfast Items */}
+          <div className="flex flex-col items-center text-xs sm:text-sm font-semibold text-gray-700 hover:text-green-600">
+            <button>Grilled Salmon</button>
+            <span className="text-sm text-green-800 mt-2">$32</span>
+          </div>
+          <div className="flex flex-col items-center text-xs sm:text-sm font-semibold text-gray-700 hover:text-green-600">
+            <button>BBQ Chicken Breast</button>
+            <span className="text-sm text-green-800 mt-2">$28</span>
+          </div>
+          <div className="flex flex-col items-center text-xs sm:text-sm font-semibold text-gray-700 hover:text-green-600">
+            <button>Fried Shrimp</button>
+            <span className="text-sm text-green-800 mt-2">$24</span>
+          </div>
+          <div className="flex flex-col items-center text-xs sm:text-sm font-semibold text-gray-700 hover:text-green-600">
+            <button>Caesar Salad</button>
+            <span className="text-sm text-green-800 mt-2">$20</span>
+          </div>
         </div>
       </div>
-
-      {/* Thin Black Line Under Menu */}
-      <div className="w-full border-t-2 border-black mb-6"></div>
-
-      {/* View More Button */}
-      <button className="px-4 py-2 bg-white border-2 border-green-800 text-green-800 text-xs font-semibold rounded-md hover:bg-green-100 transition duration-300">
-        View More
-      </button>
-
-      </div>
-            {/* Footer */}
-            <footer className="bg-black text-white py-6">
-        <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-4 gap-6 text-xs">
-          {/* About Section */}
-          <div>
-            <h4 className="font-bold mb-2">About Us</h4>
-            <p>
-              Corporate clients and leisure travelers rely on FoodTuck for dependable service.
-            </p>
-          </div>
-          {/* Links */}
-          <div>
-            <h4 className="font-bold mb-2">Useful Links</h4>
-            <ul>
-              <li><Link href="/about">About</Link></li>
-              <li><Link href="/menu">Menu</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
-            </ul>
-          </div>
-          {/* Help */}
-          <div>
-            <h4 className="font-bold mb-2">Help</h4>
-            <ul>
-              <li><Link href="/faq">FAQ</Link></li>
-              <li><Link href="/support-policy">Support Policy</Link></li>
-              <li><Link href="/privacy">Privacy</Link></li>
-            </ul>
-          </div>
-          {/* Recent Posts */}
-          <div>
-            <h4 className="font-bold mb-2">Recent Posts</h4>
-            <ul>
-              <li>Is fast food good for your body?</li>
-              <li>Change your food habit</li>
-              <li>Do you like fast food?</li>
-            </ul>
-          </div>
-        </div>
-        <p className="text-center mt-6 text-xs">© 2024 FoodTuck. All Rights Reserved.</p>
-      </footer>
-</div>
+    </div>
   );
 };
 

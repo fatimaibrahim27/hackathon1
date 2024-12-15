@@ -6,7 +6,8 @@ import Hero3 from './components/Hero2'
 import Hero4 from './components/Hero3'
 import Hero5 from './components/Hero4'
 import Footer from './components/Footer'
-const page = () => {
+
+const Page = () => {
   return (
     <div>
       <Header />
@@ -17,8 +18,7 @@ const page = () => {
       <Hero5/>
       <Footer/>
     </div>
-    
   )
 }
 
-export default page
+export default Page
