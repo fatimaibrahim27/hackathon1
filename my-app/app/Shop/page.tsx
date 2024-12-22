@@ -59,7 +59,7 @@ const ShoppingCart: React.FC = () => {
             <Link href="/Pages" className="text-white hover:text-yellow-400 transition">Pages</Link>
             <Link href="/About" className="text-white hover:text-yellow-400 transition">About</Link>
             <Link href="/Shop" className="text-white hover:text-yellow-400 transition">Shop</Link>
-            <Link href="/contact" className="text-white hover:text-yellow-400 transition">Contact</Link>
+            <Link href="/Contact" className="text-white hover:text-yellow-400 transition">Contact</Link>
           </nav>
 
         </div>

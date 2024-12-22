@@ -35,7 +35,7 @@ const Navbar = () => {
             <Link href="/Shop" className="text-white hover:text-yellow-400 transition">
               Shop
             </Link>
-            <Link href="/contact" className="text-white hover:text-yellow-400 transition">
+            <Link href="/Contact" className="text-white hover:text-yellow-400 transition">
               Contact
             </Link>
           </nav>
@@ -166,7 +166,7 @@ const Navbar = () => {
           </div>
           <div className="w-20 h-20 sm:w-24 sm:h-24">
             <Image
-              src="/120-item.png"
+              src="/120 item.png"
               alt="Chef Two"
               width={80}
               height={80}
@@ -175,7 +175,7 @@ const Navbar = () => {
           </div>
           <div className="w-20 h-20 sm:w-24 sm:h-24">
             <Image
-              src="/120-item.png"
+              src="/Best chef.png"
               alt="Chef Three"
               width={80}
               height={80}
@@ -225,6 +225,54 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+        {/* Footer Section */}
+        <footer className="bg-black text-white py-12">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="flex flex-wrap justify-between gap-8">
+            {/* FoodTuck Section */}
+            <div className="w-full sm:w-1/4">
+              <h3 className="text-2xl font-semibold mb-4">FOOD TUCK</h3>
+              <p className="text-sm">
+                Explore the world of delicious meals and gourmet dishes. Enjoy the finest food delivered right to your door.
+              </p>
+            </div>
+
+            {/* Quick Links */}
+            <div className="w-full sm:w-1/4">
+              <h3 className="text-2xl font-semibold mb-4">Quick Links</h3>
+              <ul className="text-sm">
+                <li><Link href="/" className="hover:text-yellow-400">Home</Link></li>
+                <li><Link href="/Menu" className="hover:text-yellow-400">Menu</Link></li>
+                <li><Link href="/Blog" className="hover:text-yellow-400">Blog</Link></li>
+                <li><Link href="/Shop" className="hover:text-yellow-400">Shop</Link></li>
+                <li><Link href="/Contact" className="hover:text-yellow-400">Contact</Link></li>
+              </ul>
+            </div>
+
+            {/* Contact Us Section */}
+            <div className="w-full sm:w-1/4">
+              <h3 className="text-2xl font-semibold mb-4">Contact Us</h3>
+              <div className="flex items-center gap-2 mb-4">
+            
+                <p className="text-sm">+1 234 567 890</p>
+              </div>
+              <div className="flex items-center gap-2 mb-4">
+                
+                <p className="text-sm">info@foodtuck.com</p>
+              </div>
+              <div className="flex items-center gap-2">
+                
+                <p className="text-sm">123 Food Street, City, Country</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Footer Bottom */}
+          <div className="border-t border-gray-700 mt-8 pt-4 text-center">
+            <p className="text-sm">&copy; {new Date().getFullYear()} FOOD TUCK. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

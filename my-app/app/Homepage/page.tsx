@@ -15,7 +15,6 @@ export default function Hero() {
               <span className="text-yellow-400">TUCK</span>
             </Link>
           </div>
-
           {/* Navigation Links */}
           <nav className="flex gap-4 text-xs sm:text-sm font-medium justify-center items-center">
             <Link href="/" className="text-white hover:text-yellow-400 transition">Home</Link>
@@ -24,11 +23,12 @@ export default function Hero() {
             <Link href="/Pages" className="text-white hover:text-yellow-400 transition">Pages</Link>
             <Link href="/About" className="text-white hover:text-yellow-400 transition">About</Link>
             <Link href="/Shop" className="text-white hover:text-yellow-400 transition">Shop</Link>
-            <Link href="/contact" className="text-white hover:text-yellow-400 transition">Contact</Link>
+            <Link href="/Contact" className="text-white hover:text-yellow-400 transition">Contact</Link>
           </nav>
         </div>
       </header>
-
+            <hr />
+            <hr />
       {/* Main Section */}
       <main className="flex flex-wrap sm:flex-nowrap items-center justify-between py-10 px-4 sm:px-6">
         {/* Left Content */}

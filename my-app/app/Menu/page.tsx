@@ -9,7 +9,7 @@ const Navbar = () => {
     { name: 'Fresh Breakfast', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '14.5$', image: '/Group 68.png' },
     { name: 'Mild Butter', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '12.5$', image: '/unsplash_-lHZUkiWM74.png' },
     { name: 'Fresh Bread', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '12.5$', image: '/Group 68.png' },
-    { name: 'Glow Cheese', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '12.5$', image: '/product_img.png' },
+    { name: 'Glow Cheese', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '12.5$', image: '/product_img (1).png' },
     { name: 'Italian Pizza', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '14.5$', image: '/product_img (2).png' },
     { name: 'Slice Beef', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '12.5$', image: '/unsplash_CLMpC9UhyTo (1).png' },
     { name: 'Mushroom Pizza', description: 'Lacus nisl, et ac dapibus velit in consequat.', price: '12.5$', image: '/unsplash_fdlZBWIP0aM.png' },
@@ -47,7 +47,7 @@ const Navbar = () => {
       <div
         className="bg-cover bg-center h-[90px] sm:h-[130px] p-[26px] flex flex-col justify-center items-center text-white relative"
         style={{
-          backgroundImage: 'url("/unsplash_4ycv3Ky1ZZU.png")',
+          backgroundImage: 'url("unsplash_4ycv3Ky1ZZU.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -62,7 +62,7 @@ const Navbar = () => {
       </div>
 
       {/* Menu Section */}
-      <section className="bg-gray-100 px-8 sm:px-16 lg:px-[135px] text-black py-12">
+      <section className="bg-gray-300 px-8 sm:px-16 lg:px-[135px] text-black py-12">
         <div className="container mx-auto">
           <h2 className="text-xl sm:text-2xl font-bold text-center mb-2">Choose & Pick</h2>
           <h1 className="text-2xl sm:text-3xl font-bold text-center mb-8">From Our Menu</h1>

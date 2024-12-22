@@ -3,7 +3,7 @@ import Signup from '../Signup/page'
 import Checkout from '../Checkout/page'
 import Homepage from '../Homepage/page'
 import Signin from '../Signin/page'
-const page = () => {
+const Page = () => {
   return (
     <div>
       <Homepage/>
@@ -15,3 +15,4 @@ const page = () => {
     </div>
   )
 }
+export default Page ;

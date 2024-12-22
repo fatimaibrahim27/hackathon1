@@ -15,7 +15,7 @@ export default function SignUpPage() {
               <li><Link href="/">Home</Link></li>
               <li><Link href="/Menu">Menu</Link></li>
               <li><Link href="/About">About</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
+              <li><Link href="/Contact">Contact</Link></li>
             </ul>
           </nav>
         </div>
