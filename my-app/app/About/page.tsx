@@ -31,7 +31,7 @@ const About = () => {
             <Link href="/Pages" className="text-white hover:text-yellow-400 transition">
               Pages
             </Link>
-            <Link href="/about" className="text-white hover:text-yellow-400 transition">
+            <Link href="/About" className="text-white hover:text-yellow-400 transition">
               About
             </Link>
             <Link href="/Shop" className="text-white hover:text-yellow-400 transition">
