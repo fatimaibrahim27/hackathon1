@@ -135,7 +135,7 @@ const page = () => {
                   </div>
                 </div>
                 <div className="mx-0 mb-1 sm:mb-2">
-                  <textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"></textarea>
+                  <textarea id="textarea" name="textarea" cols={30} rows={5} placeholder="Write your message..." className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"></textarea>
                 </div>
                 <div className="text-center">
                   <button type="submit" className="w-full bg-blue-800 text-white px-2 py-2 font-xl rounded-md sm:mb-0">Send Message</button>
