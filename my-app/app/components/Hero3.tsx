@@ -52,8 +52,8 @@ const Hero = () => {
 
         {/* Subtitle */}
         <h6 className="text-xs sm:text-sm font-thin text-gray-800 mt-2 italic">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua."
+          &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.&quot;
         </h6>
 
         {/* New Buttons with White Box */}
