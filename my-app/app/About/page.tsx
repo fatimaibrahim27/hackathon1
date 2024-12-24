@@ -1,10 +1,12 @@
+// pages/about.tsx
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const Navbar = () => {
+const About = () => {
   return (
     <div>
+      {/* Header Section */}
       <header className="bg-black shadow-md">
         <div className="container mx-auto flex justify-between items-center py-2 px-4 sm:px-6">
           {/* Logo */}
@@ -49,7 +51,7 @@ const Navbar = () => {
           backgroundImage: 'url("/unsplash_4ycv3Ky1ZZU.png")',
         }}
       >
-        <h1 className="text-2xl sm:text-3xl font-extrabold">About us</h1>
+        <h1 className="text-2xl sm:text-3xl font-extrabold">About Us</h1>
         <p className="mt-2 text-sm sm:text-base">Explore our delicious menu options.</p>
 
         {/* Breadcrumb */}
@@ -58,8 +60,8 @@ const Navbar = () => {
             Home
           </Link>
           <span className="mx-2"> &gt; </span>
-          <Link href="/menu" className="hover:text-yellow-400 transition">
-            Menu
+          <Link href="/about" className="hover:text-yellow-400 transition">
+            About
           </Link>
         </div>
       </div>
@@ -71,7 +73,7 @@ const Navbar = () => {
           <div className="w-28 h-28 sm:w-32 sm:h-32">
             <Image
               src="/unsplash_lP5MCM6nZ5A.png"
-              alt="Delicious Food Top"
+              alt="Delicious Food"
               width={112}
               height={112}
               className="w-full h-full object-cover rounded-md"
@@ -106,15 +108,13 @@ const Navbar = () => {
             <i>About us</i>
           </h5>
           <h1 className="font-extrabold text-sm sm:text-lg text-gray-800 leading-tight">
-            Food is an important
-            <br />
-            part of a balanced diet
+            Food is an important part of a balanced diet
           </h1>
 
           {/* Subtitle */}
           <h6 className="text-xs sm:text-sm font-thin text-gray-800 mt-2 italic">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua."
+            &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.&quot;
           </h6>
 
           {/* Buttons */}
@@ -188,7 +188,7 @@ const Navbar = () => {
         </h1>
 
         <h6 className="text-[10px] sm:text-xs font-thin text-gray-800 mt-2 italic mb-6">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+          &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod&quot;
         </h6>
 
         {/* Menu Categories (Breakfast, Lunch, Dinner) */}
@@ -225,8 +225,9 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-        {/* Footer Section */}
-        <footer className="bg-black text-white py-12">
+
+      {/* Footer Section */}
+      <footer className="bg-black text-white py-12">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="flex flex-wrap justify-between gap-8">
             {/* FoodTuck Section */}
@@ -253,16 +254,10 @@ const Navbar = () => {
             <div className="w-full sm:w-1/4">
               <h3 className="text-2xl font-semibold mb-4">Contact Us</h3>
               <div className="flex items-center gap-2 mb-4">
-            
-                <p className="text-sm">+1 234 567 890</p>
+                <p className="text-sm">+1 (123) 456-7890</p>
               </div>
               <div className="flex items-center gap-2 mb-4">
-                
-                <p className="text-sm">info@foodtuck.com</p>
-              </div>
-              <div className="flex items-center gap-2">
-                
-                <p className="text-sm">123 Food Street, City, Country</p>
+                <p className="text-sm">contact@foodtuck.com</p>
               </div>
             </div>
           </div>
@@ -277,4 +272,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default About;

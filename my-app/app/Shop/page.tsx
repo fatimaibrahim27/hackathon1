@@ -1,13 +1,12 @@
-'use client';
-
+'use client'
 import Link from 'next/link';
 import React, { useState } from 'react';
-
+import Image from 'next/image';
 
 const ShoppingCart: React.FC = () => {
   const initialCartItems = [
     { name: "Burger", price: 10.99, quantity: 2, image: "/product_img.png" },
-    { name: "Fresh Lime", price: 3.49, quantity: 1, image: "Group 68.png" },
+    { name: "Fresh Lime", price: 3.49, quantity: 1, image: "/Group 68.png" },
     { name: "Pizza", price: 9.99, quantity: 4, image: "/product_img (2).png" },
     { name: "Chocolate Muffin", price: 4.49, quantity: 1, image: "/product_img (1).png" },
     { name: "Cheese Butter", price: 11.99, quantity: 3, image: "/Grand Italiano.png" },
@@ -61,7 +60,6 @@ const ShoppingCart: React.FC = () => {
             <Link href="/Shop" className="text-white hover:text-yellow-400 transition">Shop</Link>
             <Link href="/Contact" className="text-white hover:text-yellow-400 transition">Contact</Link>
           </nav>
-
         </div>
       </header>
 
@@ -93,10 +91,12 @@ const ShoppingCart: React.FC = () => {
             {cartItems.map((item, index) => (
               <tr key={index} className="border-b">
                 <td className="p-2 flex items-center">
-                  <img
+                  <Image
                     src={item.image}
                     alt={item.name}
-                    className="w-12 h-12 object-cover rounded mr-2 sm:mr-4"
+                    width={48} // Adjust the width
+                    height={48} // Adjust the height
+                    className="object-cover rounded mr-2 sm:mr-4"
                   />
                   <span>{item.name}</span>
                 </td>
@@ -124,8 +124,8 @@ const ShoppingCart: React.FC = () => {
           </tbody>
         </table>
 
+        {/* Coupon Section */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center mt-7">
-          {/* Coupon Section */}
           <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
             <h2 className="text-sm sm:text-lg font-semibold mb-2">Coupon Code</h2>
             <div className="flex items-center">
@@ -171,18 +171,17 @@ const ShoppingCart: React.FC = () => {
           </div>
         </div>
       </main>
+
+      {/* Footer */}
       <footer className="bg-black text-white py-12">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="flex flex-wrap justify-between gap-8">
-            {/* FoodTuck Section */}
             <div className="w-full sm:w-1/4">
               <h3 className="text-2xl font-semibold mb-4">FOOD TUCK</h3>
               <p className="text-sm">
                 Explore the world of delicious meals and gourmet dishes. Enjoy the finest food delivered right to your door.
               </p>
             </div>
-
-            {/* Quick Links */}
             <div className="w-full sm:w-1/4">
               <h3 className="text-2xl font-semibold mb-4">Quick Links</h3>
               <ul className="text-sm">
@@ -193,31 +192,26 @@ const ShoppingCart: React.FC = () => {
                 <li><Link href="/Contact" className="hover:text-yellow-400">Contact</Link></li>
               </ul>
             </div>
-
-            {/* Contact Us Section */}
             <div className="w-full sm:w-1/4">
               <h3 className="text-2xl font-semibold mb-4">Contact Us</h3>
-              <div className="flex items-center gap-2 mb-4">
-                
-                <p className="text-sm">+1 234 567 890</p>
+              <div className="text-sm">
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: support@foodtuck.com</p>
+                <p>Address: 123 Food Street, City, Country</p>
               </div>
-              <div className="flex items-center gap-2 mb-4">
-                
-                <p className="text-sm">info@foodtuck.com</p>
-              </div>
-              <div className="flex items-center gap-2">
-                <p className="text-sm">123 Food Street, City, Country</p>
+            </div>
+            <div className="w-full sm:w-1/4">
+              <h3 className="text-2xl font-semibold mb-4">Follow Us</h3>
+              <div className="flex space-x-4 text-sm">
+                <Link href="#" className="text-white hover:text-yellow-400">Facebook</Link>
+                <Link href="#" className="text-white hover:text-yellow-400">Instagram</Link>
+                <Link href="#" className="text-white hover:text-yellow-400">Twitter</Link>
+                <Link href="#" className="text-white hover:text-yellow-400">LinkedIn</Link>
               </div>
             </div>
           </div>
-
-          {/* Footer Bottom */}
-          <div className="border-t border-gray-700 mt-8 pt-4 text-center">
-            <p className="text-sm">&copy; {new Date().getFullYear()} FOOD TUCK. All rights reserved.</p>
-          </div>
         </div>
       </footer>
-
     </div>
   );
 };

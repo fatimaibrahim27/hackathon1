@@ -27,13 +27,13 @@ export default function Hero() {
           </nav>
         </div>
       </header>
-            <hr />
-            <hr />
+      <hr />
+      <hr />
       {/* Main Section */}
       <main className="flex flex-wrap sm:flex-nowrap items-center justify-between py-10 px-4 sm:px-6">
         {/* Left Content */}
         <div className="w-full sm:w-1/2">
-          <h3 className="text-yellow-500 font-sans">It's Quick & Amusing</h3>
+          <h3 className="text-yellow-500 font-sans">It&apos;s Quick &amp; Amusing</h3>
           <h1 className="text-white font-bold sm:text-3xl lg:text-5xl mt-2">
             <span className="text-yellow-400">The</span> Art of Speed
           </h1>
@@ -73,13 +73,13 @@ export default function Hero() {
 
         {/* Right Content */}
         <div className="w-full sm:w-1/2 text-right">
-          <h5 className="text-green-500 italic">Healthy & Juicy Food</h5>
+          <h5 className="text-green-500 italic">Healthy &amp; Juicy Food</h5>
           <h1 className="text-lg sm:text-xl font-bold text-white mt-4">
             We create the best quality food products
           </h1>
           <p className="text-gray-300 mt-4 italic">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua."
+            &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.&quot;
           </p>
           <button className="bg-green-800 text-white font-bold py-2 px-6 rounded mt-6 hover:bg-green-600 transition">
             Show More
