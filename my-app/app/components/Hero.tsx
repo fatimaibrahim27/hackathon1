@@ -16,19 +16,19 @@ const Hero = () => {
       <div className="flex flex-col items-start text-left max-w-sm">
         {/* Title */}
         <h5 className="text-green-600 font-serif text-sm sm:text-base">
-          <i>Healthy & Juicy Food</i>
+          <i>Healthy &amp; Juicy Food</i>
         </h5>
         <h1 className="font-extrabold text-lg sm:text-xl text-gray-800 leading-tight">
           Enjoy Healthy Life
           <br />
-          & Tasty Food
+          &amp; Tasty Food
         </h1>
 
         {/* Subtitle */}
         <h6 className="text-xs sm:text-sm font-thin text-gray-800 mt-2 italic">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
           <br />
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&quot;
         </h6>
 
         {/* Buttons */}

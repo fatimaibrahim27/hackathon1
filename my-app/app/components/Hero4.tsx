@@ -5,7 +5,7 @@ const Hero5 = () => {
     <div className="flex flex-col items-center text-center py-8">
       {/* Header */}
       <h5 className="text-green-600 font-serif text-sm sm:text-base mb-2">
-        <i>Healthy & Juicy Food</i>
+        <i>Healthy &amp; Juicy Food</i>
       </h5>
       
       <h1 className="font-extrabold text-lg sm:text-xl text-gray-800 leading-tight mb-4">
@@ -13,7 +13,7 @@ const Hero5 = () => {
       </h1>
 
       <h6 className="text-[10px] sm:text-xs font-thin text-gray-800 mt-2 italic mb-6">
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+        &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod&quot;
       </h6>
 
       {/* Menu Categories (Breakfast, Lunch, Dinner) */}

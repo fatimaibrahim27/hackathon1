@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image'; // Import Next.js Image component
-import { FaSearch, FaUserAlt, FaShoppingBag, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; // Import icons
+import Image from 'next/image'; 
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; // Import only used icons
 
 const Navbar = () => {
   const menuItems = [
@@ -38,8 +38,6 @@ const Navbar = () => {
             <Link href="/Shop" className="text-white hover:text-yellow-400 transition">Shop</Link>
             <Link href="/Contact" className="text-white hover:text-yellow-400 transition">Contact</Link>
           </nav>
-
-          {/* Icons */}
         </div>
       </header>
 
@@ -132,15 +130,15 @@ const Navbar = () => {
             <div className="w-full sm:w-1/4">
               <h3 className="text-2xl font-semibold mb-4">Contact Us</h3>
               <div className="flex items-center gap-2 mb-4">
-            
+                <FaPhoneAlt className="text-yellow-400" />
                 <p className="text-sm">+1 234 567 890</p>
               </div>
               <div className="flex items-center gap-2 mb-4">
-                
+                <FaEnvelope className="text-yellow-400" />
                 <p className="text-sm">info@foodtuck.com</p>
               </div>
               <div className="flex items-center gap-2">
-                
+                <FaMapMarkerAlt className="text-yellow-400" />
                 <p className="text-sm">123 Food Street, City, Country</p>
               </div>
             </div>
@@ -152,7 +150,6 @@ const Navbar = () => {
           </div>
         </div>
       </footer>
-
     </>
   );
 };

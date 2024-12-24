@@ -26,7 +26,7 @@ const Hero = () => {
           </span>
           <h2 className="font-semibold text-lg sm:text-xl">Food Category</h2>
           <p className="text-xs sm:text-sm font-thin text-gray-800 mt-2 italic">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+            &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.&quot;
           </p>
         </div>
 
@@ -79,13 +79,13 @@ const Hero = () => {
           className="absolute top-1/2 left-0 transform -translate-y-1/2 p-2 cursor-pointer z-10"
           onClick={scrollLeft}
         >
-          <span className="text-2xl text-gray-800 hover:text-green-600">&#8592;</span>
+          <span className="text-2xl text-gray-800 hover:text-green-600">&larr;</span>
         </div>
         <div
           className="absolute top-1/2 right-0 transform -translate-y-1/2 p-2 cursor-pointer z-10"
           onClick={scrollRight}
         >
-          <span className="text-2xl text-gray-800 hover:text-green-600">&#8594;</span>
+          <span className="text-2xl text-gray-800 hover:text-green-600">&rarr;</span>
         </div>
       </div>
     </div>
